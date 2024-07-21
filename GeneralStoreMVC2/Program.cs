@@ -6,11 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddControllerWithViews();
+builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<GeneralStoreDb2Context>(
     options => options.UseSqlServer(
-        builder.Configuration.GetConnectionsString("GeneralStoreDb2")
+        builder.Configuration.GetConnectionString("GeneralStoreDb2")
     )
 );
 

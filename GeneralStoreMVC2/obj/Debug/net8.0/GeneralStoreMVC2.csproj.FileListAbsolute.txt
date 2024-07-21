@@ -147,3 +147,4 @@
 /Users/macmini/GeneralStoreMVC2/GeneralStoreMVC2/obj/Debug/net8.0/GeneralStoreMVC2.pdb
 /Users/macmini/GeneralStoreMVC2/GeneralStoreMVC2/obj/Debug/net8.0/GeneralStoreMVC2.genruntimeconfig.cache
 /Users/macmini/GeneralStoreMVC2/GeneralStoreMVC2/obj/Debug/net8.0/ref/GeneralStoreMVC2.dll
+/Users/macmini/GeneralStoreMVC2/GeneralStoreMVC2/obj/Debug/net8.0/GeneralStoreMVC2.sourcelink.json
