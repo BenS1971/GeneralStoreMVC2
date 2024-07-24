@@ -8,7 +8,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<GeneralStoreDb2Context>(
+builder.Services.AddDbContext<ApplicationDbContext>(
     options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("GeneralStoreDb2")
     )
