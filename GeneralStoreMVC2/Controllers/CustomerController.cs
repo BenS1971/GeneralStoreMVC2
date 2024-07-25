@@ -7,15 +7,16 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 namespace GeneralStoreMVC2.Controllers;
 
 public class CustomerController : Controller;
-//{
-//    private readonly GeneralStoreDb2Context _ctx;
-//    public CustomerController(GeneralStoreDb2Context dbContext)
-//    {
-//        _ctx = dbContext;
-//    }
-// }
-public async Task<IActionResult> Index()
-{
+
+    private readonly GeneralStoreDb2Context _ctx;
+
+    public CustomerController(GeneralStoreDb2Context dbContext)
+    {
+        _ctx = dbContext;
+    }
+
+    public async Task<IActionResult> Index()
+    {
     List<CustomerIndexViewModel> customers = await _ctx.Customers
     .Select(CustomerController => new CustomerIndexViewModel
     {
@@ -26,6 +27,7 @@ public async Task<IActionResult> Index()
     .ToListAsync();
 
     return View(customers);
-}
+    }
+
 
 
